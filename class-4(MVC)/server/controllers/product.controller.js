@@ -10,6 +10,23 @@ const createProduct = async (req, res) => {
     res.send(product)
 }
 
+const getAllProducts = async(req, res) => {
+    const products = await ProductModel.find({})
+    res.send(products)
+}
+
+const updateProduct = async(req, res) => {
+    const updatedProduct = await ProductModel.findByIdAndUpdate(req.params.id, req.body)
+    res.send(updatedProduct)
+}
+
+const deleteProduct = async(req, res) => {
+    const deletedProduct = await ProductModel.findByIdAndDelete(req.params.id)
+    res.send(deletedProduct)
+}
 module.exports = {
-    createProduct
+    createProduct,
+    getAllProducts,
+    updateProduct,
+    deleteProduct
 }
