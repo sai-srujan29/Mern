@@ -1,0 +1,5 @@
+srujanayetham_db_user
+
+bEj7PDJeFRixFo8D    
+
+mongodb+srv://srujanayetham_db_user:bEj7PDJeFRixFo8D@cluster0.xalhh6a.mongodb.net/LMS?appName=Cluster0
